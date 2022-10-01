@@ -11,7 +11,7 @@ function App() {
     <div>
       <Container>
         <Row>
-          <Col xs={12} md={8}>
+          <Col xs={12} md={8} className="bg-light">
             <Activities></Activities>
           </Col>
           <Col xs={12} md={4}>
