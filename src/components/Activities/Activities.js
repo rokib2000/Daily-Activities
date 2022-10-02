@@ -3,7 +3,9 @@ import Row from "react-bootstrap/Row";
 import Activity from "../Activity/Activity";
 import Col from "react-bootstrap/Col";
 import QueAns from "../QueAns/QueAns";
-import SideBar from "../SideBar/SideBar";
+import Profile from "../Profile/Profile";
+import BreakButton from "../BreakButton/BreakButton";
+import ActivitiesDetails from "../ActivitiesDetails/ActivitiesDetails";
 
 const Activities = () => {
   const [activities, setActivities] = useState([]);
@@ -37,7 +39,11 @@ const Activities = () => {
           <QueAns></QueAns>
         </Col>
         <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 2 }}>
-          <SideBar></SideBar>
+          <hr className="m-0 p-0 border-top-0" />
+          <Profile></Profile>
+          <BreakButton></BreakButton>
+          <ActivitiesDetails></ActivitiesDetails>
+          <hr className="mb-5 p-0 border-top-0" />
         </Col>
       </Row>
     </div>
