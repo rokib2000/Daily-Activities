@@ -25,8 +25,11 @@ const Activities = () => {
     setList(newList);
   };
 
-  const handleClick = (breakTime) => {
-    const newTime = breakTime;
+  const handleClick = (selectedTime) => {
+    const newTime = selectedTime;
+
+    localStorage.setItem("breakTime", time);
+
     setTime(newTime);
   };
 

@@ -4,6 +4,7 @@ import { ButtonGroup } from "react-bootstrap";
 
 const BreakButton = (props) => {
   const { handleClick } = props;
+
   return (
     <div>
       <h3 className="my-4">Add A Break</h3>
