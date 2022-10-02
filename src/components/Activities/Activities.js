@@ -7,7 +7,7 @@ const Activities = () => {
     <div>
       <h2 className="my-4">Today Activities</h2>
       <div>
-        <Row xs={1} md={3} className="g-4">
+        <Row xs={1} md={2} lg={3} className="g-4">
           <Activity></Activity>
         </Row>
       </div>

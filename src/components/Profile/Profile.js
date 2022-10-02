@@ -9,11 +9,11 @@ const Profile = () => {
     <div className="">
       <h3 className="my-4">Profile</h3>
       <Row className="align-items-center">
-        <Col xs={4} md={2}>
+        <Col xs={4} sm={2} md={4} lg={2}>
           <img className="img-fluid" src={ProfileImage} alt="" srcset="" />
         </Col>
-        <Col xs={8} md={10}>
-          <h4>Md Nazrul Islam Rokib</h4>
+        <Col xs={8} sm={10} md={8} lg={10}>
+          <h5>Md Nazrul Islam Rokib</h5>
           <p className="mb-0">Dhaka, Bangladesh</p>
         </Col>
       </Row>
