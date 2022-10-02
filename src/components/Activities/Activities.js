@@ -10,6 +10,7 @@ import ActivitiesDetails from "../ActivitiesDetails/ActivitiesDetails";
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   const [list, setList] = useState([]);
+  const [time, setTime] = useState([]);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -22,6 +23,11 @@ const Activities = () => {
     newList = [...list, selectActivity];
 
     setList(newList);
+  };
+
+  const handleClick = (breakTime) => {
+    const newTime = breakTime;
+    setTime(newTime);
   };
 
   return (
@@ -39,12 +45,14 @@ const Activities = () => {
           <QueAns></QueAns>
         </Col>
         <Col xs={{ span: 12, order: 1 }} md={{ span: 4, order: 2 }}>
-          <hr className="m-0 p-0 border-top-0" />
-          <Profile></Profile>
-          <BreakButton></BreakButton>
-          <ActivitiesDetails list={list}></ActivitiesDetails>
+          <div className="sticky-top">
+            <hr className="m-0 p-0 border-top-0" />
+            <Profile></Profile>
+            <BreakButton handleClick={handleClick}></BreakButton>
+            <ActivitiesDetails list={list} time={time}></ActivitiesDetails>
 
-          <hr className="mb-5 p-0 border-top-0" />
+            <hr className="mb-5 p-0 border-top-0" />
+          </div>
         </Col>
       </Row>
     </div>

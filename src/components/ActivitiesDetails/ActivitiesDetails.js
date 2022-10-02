@@ -25,7 +25,7 @@ const ActivitiesDetails = (props) => {
           <h6>Activities Break:</h6>
         </ListGroup.Item>
         <ListGroup.Item className="bg-light">
-          <h6>00</h6>
+          <h6>{props.time} minutes</h6>
         </ListGroup.Item>
       </ListGroup>
     </div>
