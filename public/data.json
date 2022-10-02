@@ -12,10 +12,10 @@
     "time": 3
   },
   {
-    "id": "3",
-    "name": "Sleep",
-    "img": "https://i.postimg.cc/CKJqFmcM/sleep.jpg",
-    "time": 7
+    "id": "6",
+    "name": "Coding",
+    "img": "https://i.postimg.cc/3xfPGHSP/coding.jpg",
+    "time": 8
   },
   {
     "id": "4",
@@ -30,9 +30,9 @@
     "time": 2
   },
   {
-    "id": "6",
-    "name": "Coding",
-    "img": "https://i.postimg.cc/3xfPGHSP/coding.jpg",
-    "time": 8
+    "id": "3",
+    "name": "Sleep",
+    "img": "https://i.postimg.cc/5y8tNWvC/sleep2.jpg",
+    "time": 7
   }
 ]

@@ -10,7 +10,7 @@ const Profile = () => {
       <h3 className="my-4">Profile</h3>
       <Row className="align-items-center">
         <Col xs={4} sm={2} md={4} lg={2}>
-          <img className="img-fluid" src={ProfileImage} alt="" srcset="" />
+          <img className="img-fluid" src={ProfileImage} alt="" />
         </Col>
         <Col xs={8} sm={10} md={8} lg={10}>
           <h5>Md Nazrul Islam Rokib</h5>
