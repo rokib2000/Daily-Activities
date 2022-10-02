@@ -10,18 +10,18 @@ import ActivitiesDetails from "../ActivitiesDetails/ActivitiesDetails";
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   const [list, setList] = useState([]);
-
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setActivities(data));
   }, []);
 
-  const handleAddToList = (activity) => {
-    // console.log(activity);
-    const newList = [...list, activity];
+  const handleAddToList = (selectActivity) => {
+    let newList = [];
+
+    newList = [...list, selectActivity];
+
     setList(newList);
-    console.log(newList);
   };
 
   return (
@@ -42,7 +42,8 @@ const Activities = () => {
           <hr className="m-0 p-0 border-top-0" />
           <Profile></Profile>
           <BreakButton></BreakButton>
-          <ActivitiesDetails></ActivitiesDetails>
+          <ActivitiesDetails list={list}></ActivitiesDetails>
+
           <hr className="mb-5 p-0 border-top-0" />
         </Col>
       </Row>

@@ -1,7 +1,13 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 
-const ActivitiesDetails = () => {
+const ActivitiesDetails = (props) => {
+  const { list } = props;
+  let total = 0;
+  for (const activity of list) {
+    total = total + activity.time;
+  }
+
   return (
     <div>
       <h3 className="my-4">Activities Details</h3>
@@ -10,7 +16,7 @@ const ActivitiesDetails = () => {
           <h6>Activities Time:</h6>
         </ListGroup.Item>
         <ListGroup.Item className="bg-light">
-          <h6>00</h6>
+          <h6> {total} hours</h6>
         </ListGroup.Item>
       </ListGroup>
       <br />
