@@ -4,8 +4,8 @@ import Col from "react-bootstrap/Col";
 import { Button } from "react-bootstrap";
 
 const Activity = (props) => {
-  console.log(props);
-  const { name, img, time } = props.activity;
+  const { handleAddToList, activity } = props;
+  const { name, img, time } = activity;
   return (
     <div>
       <Col>
@@ -15,7 +15,14 @@ const Activity = (props) => {
             <Card.Title>{name}</Card.Title>
             <Card.Text>Time: {time} hours</Card.Text>
             <div className="d-grid gap-2">
-              <Button variant="primary">Add to list</Button>
+              <Button
+                onClick={() => {
+                  handleAddToList(activity);
+                }}
+                variant="primary"
+              >
+                Add to list
+              </Button>
             </div>
           </Card.Body>
         </Card>
